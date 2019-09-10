@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Tera|Slabo+27px&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(002.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@keyframes fadeIn { 
+  from { 
+    opacity:0; 
+  }
+  to { 
+    opacity:1; 
+  } 
+}
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  left: 10px;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*
+
+.sidenav a:hover {
+  color: hotpink;
+}
+*/
+.insta_png, .email_png{
+  width:20px;
+}
+.welcome {
+  left:50%;
+  top:50%;
+  position: absolute;
+  color:white;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  animation: fadeIn ease 3s;
+}
+.welcome h1{
+  font-family: 'Lexend Tera', sans-serif;
+  font-size:5em;
+}
+.welcome h2 {
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+hr{
+  border: 2px solid hotpink;
+  margin: 25px auto;
+  width: 50%;
+}
+#timer{
+  font-family: 'Slabo 27px', serif;
+  font-size: 35px;
+  animation: fadeIn ease 3s;
+}
